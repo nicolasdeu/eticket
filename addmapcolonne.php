@@ -24,7 +24,7 @@
 
       <h3>ajouter le nom d'une collone au mapping</h3>
 
-      <table id='tableone' border='1'>
+      <ul>
         <?php
           $ini_array = parse_ini_file("bdd.ini",true);
           include 'request.php';
@@ -85,7 +85,7 @@
           $reponse->closeCursor();
           echo "</li>";
         ?>
-      </table>
+      </ul>
 
       <form action="addmapcolonne.php" method="post">
         <input type="text" name="namecsv">
