@@ -112,9 +112,6 @@
 
           <br>
           INC-0001;donnée inutile;Titre de l'incident;E-mail;Solved;Closed;3 Average;global service desk;Region;Country;un@email;UNGROUPUN;01/12/2015 03:43:00;01/12/2015 05:30:29;01/12/2015 05:30:48;30/12/2015 16:51:56;04/01/2016 16:52:51
-
-
-          un;test;pour;voir
         </div>
 
       </div><!-- container -->
