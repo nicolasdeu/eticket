@@ -20,7 +20,7 @@
       <header class="page-header" href="./">
         <h1><a href="./">eticket</a></h1>
       </header>
-      <h3>importer des incidents</h3>
+      <h3>mise a jour de l'incident</h3>
       <?php
         date_default_timezone_set('UTC');
         /*****************************************************************/
@@ -189,10 +189,10 @@
         $reponse->closeCursor();
 
         $req = $bdd->prepare($GLOBALS['update_dateass']);
-        $req->execute(array('inc_dateass' => $date_dateass,'inc_code_im' => $codeinc));
+        $req->execute(array('inc_dateass' => $date_dateass,'inc_code_id' => $codeinc));
 
         $req = $bdd->prepare($GLOBALS['update_solved']);
-        $req->execute(array('inc_solved' => $incsolved,'inc_code_im' => $codeinc));
+        $req->execute(array('inc_solved' => $incsolved,'inc_code_id' => $codeinc));
 
         $req = $bdd->prepare($GLOBALS['update_workinprogress']);
         $req->execute(array('inc_workinprogress' => $workinprogress,'inc_code_id' => $codeinc));
