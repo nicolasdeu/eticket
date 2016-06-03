@@ -272,12 +272,12 @@
                 }
               }
             }else{
-              $doublon=0
+              $doublon=0;
               $reponse = $bdd->query($verif_unique_inc);
               while ($donnees = $reponse->fetch())
               {
                 if ($donnees['inc_code']==$requete_execute['inc_code']) {
-                  $doublon = 1
+                  $doublon = 1;
                 }
               }
               if ($doublon==0) {
